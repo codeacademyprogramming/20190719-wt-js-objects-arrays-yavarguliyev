@@ -58,9 +58,3 @@ function reset(){
     inputs[3].value = "";
     inputs[4].value = "";
 }
-
-
-
-
-
-
