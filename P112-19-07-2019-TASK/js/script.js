@@ -10,8 +10,8 @@ function Student(firstName, lastName, email, phone, age) {
     this.email = email;
     this.phone = phone;
     this.age = age;
-    function Info(){
-        return this.firstName + " " +this.lastName + " " +this.email + " " +this.age ;
+    function Info() {
+        return this.firstName + " " + this.lastName + " " + this.email + " " + this.age;
     }
 }
 
@@ -19,9 +19,9 @@ function Student(firstName, lastName, email, phone, age) {
 function getInputValues() {
 
     if (inputs[0].value && inputs[1].value && inputs[2].value && inputs[3].value && inputs[4].value) {
-        if(isNaN(inputs[4].value)){
-            alert(inputs[4].value + " is not a number");
-         }else{
+        if( isNaN(inputs[4].value) ){
+            alert(inputs[4].value + "is not a number");
+         } else{
             let student = new Student(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value, inputs[4].value);
     
             students.push(student);
