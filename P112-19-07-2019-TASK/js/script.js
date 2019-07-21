@@ -19,7 +19,7 @@ function Student(firstName, lastName, email, phone, age) {
 function getInputValues() {
 
     if (inputs[0].value && inputs[1].value && inputs[2].value && inputs[3].value && inputs[4].value) {
-        if( isNaN(inputs[4].value) ){
+        if( isNaN( inputs[4].value) ){
             alert(inputs[4].value + "is not a number");
          } else{
             let student = new Student(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value, inputs[4].value);
@@ -27,8 +27,7 @@ function getInputValues() {
             students.push(student);
         
             students.forEach(generateLiItems);
-                
-        
+                   
             document.getElementsByClassName("student-list")[0].innerHTML = liItems;
             liItems = "";
             inputs[0].value = "";
@@ -38,11 +37,9 @@ function getInputValues() {
             inputs[4].value = "";
          }
    
+    } else{
+        return alert("you cannot leave the input empty");
     }
-    else{
-        return alert("input cannot be empty");
-    }
-
    
 }
 
@@ -53,7 +50,6 @@ function generateLiItems(val, ind, arr) {
     
 }
 
-
 function reset(){
     liItems = "";
     inputs[0].value = "";
@@ -62,11 +58,6 @@ function reset(){
     inputs[3].value = "";
     inputs[4].value = "";
 }
-
-// Sort list
-
-
-
 
 
 
