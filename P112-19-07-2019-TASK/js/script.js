@@ -20,8 +20,8 @@ function getInputValues() {
 
     if (inputs[0].value && inputs[1].value && inputs[2].value && inputs[3].value && inputs[4].value) {
         if( isNaN( inputs[4].value) ){
-            alert(inputs[4].value + "is not a number");
-         } else{
+            alert(inputs[4].value + " is not a number");
+         } else {
             let student = new Student(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value, inputs[4].value);
     
             students.push(student);
@@ -37,7 +37,7 @@ function getInputValues() {
             inputs[4].value = "";
          }
    
-    } else{
+    } else {
         return alert("you cannot leave the input empty");
     }
    
